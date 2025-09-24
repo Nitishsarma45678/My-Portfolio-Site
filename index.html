@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitish Sarma - Portfolio Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./media/technologist.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <div class="terminal-logo">
+                <span class="terminal-prompt">$</span>
+                <span class="typing-command" id="typing-command"></span>
+                <span class="cursor-live">_</span>
+            </div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
+
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Terminal Window (Interactive) -->
+<div class="terminal-window">
+    <div class="terminal-header">
+        <div class="terminal-controls">
+            <span class="control close"></span>
+            <span class="control minimize"></span>
+            <span class="control maximize"></span>
+        </div>
+        <div class="terminal-title">nitish@portfolio:~$</div>
+    </div>
+    <div class="terminal-body" id="terminal-body">
+        <div class="terminal-welcome">
+            <div class="ascii-art">
+    ███╗   ██╗██╗████████╗██╗███████╗██╗  ██╗
+    ████╗  ██║██║╚══██╔══╝██║██╔════╝██║  ██║
+    ██╔██╗ ██║██║   ██║   ██║███████╗███████║
+    ██║╚██╗██║██║   ██║   ██║╚════██║██╔══██║
+    ██║ ╚████║██║   ██║   ██║███████║██║  ██║
+    ╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝╚══════╝╚═╝  ╚═╝
+            </div>
+            <div class="welcome-text">
+                <div class="output-line">Welcome to Nitish's Interactive Portfolio Terminal!</div>
+                <div class="output-line">Type 'help' to see available commands</div>
+                <div class="output-line">---</div>
+            </div>
+        </div>
+        <div class="terminal-history" id="terminal-history"></div>
+        <div class="terminal-input-line">
+            <span class="prompt">nitish@portfolio:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
+           
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div class="hero-right">
+                <div class="profile-card glass-effect">
+                    <div class="profile-image">
+                        <div class="avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                        <div class="status-indicator"></div>
+                    </div>
+                    <h1 class="profile-name">Nitish Kumar Sarma</h1>
+                    <p class="profile-title">Frontend Developer</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Nitishsarma45678" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/himjyoti-talukdar-21411222b/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:nitishsarma8@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block glass-effect">
+                        <h3>🚀 Software Developer</h3>
+                        <p>Full-stack developer with experience in JavaScript, Flask, Power Platform (Power Pages, MDA , Power Automate , Dataverse)</p>
+                    </div>
+                    <div class="text-block glass-effect">
+                        <h3>💡 Problem Solver</h3>
+                        <p>From building intelligent health monitoring systems to creating embedded IoT projects, I love turning complex problems into elegant solutions.</p>
+                    </div>
+                    <div class="text-block glass-effect">
+                        <h3>🎯 Continuous Learner</h3>
+                        <p>Always exploring new technologies. Currently diving deep into modern web development frameworks.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Months Experience</div>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card glass-effect">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Tech Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass-effect">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-effect">
+                    <h3><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Flask</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Databases</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-effect">
+                    <h3><i class="fas fa-cloud"></i> Platform</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Power Platform</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- HealthAnalyzer Pro -->
+                <div class="project-card glass-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Nitishsarma45678/healthanalyzer-pro" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🏥</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HealthAnalyzer Pro</h3>
+                        <p>Intelligent health monitoring system with real-time risk assessment and personalized medical analysis using Flask and SQLite.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Polaris -->
+                <div class="project-card glass-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Nitishsarma45678/Project-Polaris" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🛰️</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Project Polaris</h3>
+                        <p>Battery-powered embedded system with custom touchscreen UI and wireless connectivity using ESP8266 microcontroller.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ESP8266</span>
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">TFT Display</span>
+                            <span class="tech-tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HIDS -->
+                <div class="project-card glass-effect">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Nitishsarma45678/HostAware-Intrusion-Detection-System" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-icon">🔒</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>HIDS Security System</h3>
+                        <p>Real-time network intrusion detection system with packet analysis and web-based management dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scapy</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">HTML , CSS , JS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card glass-effect">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>nitishsarma8@gmail.com</p>
+                    </div>
+                    <div class="contact-card glass-effect">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 9365627698</p>
+                    </div>
+                    <div class="contact-card glass-effect">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Bangalore, Karnataka</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glass-effect">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Nitish Kumar Sarma. Crafted with ❤️ and lots of ☕</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Nitishsarma45678">GitHub</a>
+                    <a href="https://www.linkedin.com/in/himjyoti-talukdar-21411222b/">LinkedIn</a>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
