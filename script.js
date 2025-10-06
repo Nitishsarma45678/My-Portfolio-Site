@@ -331,9 +331,9 @@ class InteractiveTerminal {
                 📧 Email: nitishsarma8@gmail.com<br>
                 📱 Phone: +91 9365627698<br>
                 📍 Location: Bangalore, Karnataka<br>
-                💼 LinkedIn: <a href="https://www.linkedin.com/in/himjyoti-talukdar-21411222b/" target="_blank">Connect with me</a><br>
+                💼 LinkedIn: <a href="https://www.linkedin.com/in/nitish-sarma-328451229/" target="_blank">Connect with me</a><br>
                 🐙 GitHub: <a href="https://github.com/Nitishsarma45678" target="_blank">Check out my code</a><br>
-                🌐 Portfolio: <a href="https://h1mzy0ti.github.io/himzyoti-portfolio/" target="_blank">View my work</a>
+                🌐 Portfolio: <a href="https://github.com/Nitishsarma45678" target="_blank">View my work</a>
             </div>
         `;
         this.addToHistory(contactText);
@@ -432,7 +432,7 @@ class InteractiveTerminal {
     }
 
     openLinkedin() {
-        window.open('https://www.linkedin.com/in/himjyoti-talukdar-21411222b/', '_blank');
+        window.open('https://www.linkedin.com/in/nitish-sarma-328451229/', '_blank');
         this.addToHistory('<div class="command-output success">Opening LinkedIn profile... 💼</div>');
     }
 
